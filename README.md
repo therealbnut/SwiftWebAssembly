@@ -31,7 +31,7 @@ context.loadWebAssemblyModule(
 The package can be installed through SwiftPM.
 
 ```swift
-  .package(url: "git@github.com:therealbnut/SwiftWebAssembly.git", from: "0.1.0"),
+  .package(url: "git@github.com:therealbnut/SwiftWebAssembly.git", from: "0.2.0"),
 ```
 
 A more complete example:
@@ -48,7 +48,7 @@ let package = Package(
         .library(name: "MyProduct", targets: ["MyTarget"]),
     ],
     dependencies: [
-        .package(url: "git@github.com:therealbnut/SwiftWebAssembly.git", from: "0.1.0"),
+        .package(url: "git@github.com:therealbnut/SwiftWebAssembly.git", from: "0.2.0"),
     ],
     targets: [
         .target(name: "MyTarget", dependencies: ["SwiftWebAssembly"])
