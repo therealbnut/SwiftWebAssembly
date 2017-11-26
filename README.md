@@ -13,15 +13,10 @@ let context = JSContext()
 let file = URL(fileURLWithPath: "example.wasm")
 let data = try! Data(contentsOf: file)
 
-context.loadWebAssemblyModule(
-    data: data,
-    success: { exports in
-        let result = exports?["add"]?.call(withArguments: [1, 2])
-        print("result: \(result)") // result: 3
-    },
-    failure: { error in
-        print("oh no!")
-    })
+context.loadWebAssemblyModule(data: data, success: { exports in
+    let result = exports?["add"]?.call(withArguments: [1, 2])
+    print("result: \(result)") // result: 3
+})
 ```
 
 ## Integration

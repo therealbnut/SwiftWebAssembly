@@ -23,9 +23,6 @@ extension JSContext {
     ///     success: { exports in
     ///         let result = exports?["add"]?.call(withArguments: [1, 2])
     ///         print("result: \(result)") // result: 3
-    ///     },
-    ///     failure: { error in
-    ///         print("oh no!")
     ///     })
     /// ```
     ///
