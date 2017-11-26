@@ -1,3 +1,7 @@
+//  TestBinaryDataLibrary.swift
+//  Copyright © 2017 Andrew Bennett. All rights reserved.
+
+import Foundation
 import XCTest
 import JavaScriptCore
 
@@ -62,9 +66,7 @@ class SwiftWebAssemblyTests: XCTestCase {
 
     func testImportsSuccessfullyLoaded() {
         let imports = [
-            "imported_func": context.makeFunction(from: { () -> JSValue in
-                return JSValue(undefinedIn: context)
-            })
+            "imported_func": context.makeFunction(from: { () ->  Void in })
         ]
         loadWebAssemblyModuleHelper(data: TestBinaryData.importAndExport,
                                     imports: imports)
@@ -91,16 +93,12 @@ class SwiftWebAssemblyTests: XCTestCase {
 
     func testLoadPerformance() {
         measureMetrics([.wallClockTime], automaticallyStartMeasuring: false) {
-            let imports = [
-                "__errno_location": JSValue(int32: 0, in: context)!
-            ]
             let data = TestBinaryData.library
             let finished = expectation(description: "finished")
 
             startMeasuring()
             context.loadWebAssemblyModule(
                 data: data,
-                imports: imports,
                 success: { exports in
                     self.exports = exports
                     finished.fulfill()

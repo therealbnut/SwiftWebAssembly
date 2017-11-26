@@ -1,15 +1,9 @@
-//
 //  SwiftWebAssembly+Helpers.swift
-//  SwiftWebAssemblyPackageDescription
-//
-//  Created by Andrew Bennett on 26/11/17.
-//
+//  Copyright © 2017 Andrew Bennett. All rights reserved.
 
 import Foundation
 import JavaScriptCore
 import JavaScriptCoreHelpers
-
-// MARK: - Private -
 
 extension JSContext {
 
@@ -37,14 +31,6 @@ extension JSContext {
         }
     }
 
-    internal func makeOnCompileFailureFunction(
-        callback: @escaping (JSError) -> Void) -> JSValue
-    {
-        return makeFunction { error -> Void in
-            callback(JSError(error))
-        }
-    }
-
     internal func makeOnLoadFailureFunction(
         callback: @escaping (JSError) -> Void) -> JSValue
     {
@@ -53,7 +39,7 @@ extension JSContext {
         }
     }
 
-    internal func makeOnLoadCompleteFunction(
+    internal func makeOnSuccessFunction(
         callback: @escaping ([String: JSValue]) -> Void) -> JSValue
     {
         return makeFunction { module, instance, imports, exports -> Void in
@@ -75,14 +61,14 @@ extension JSContext {
         imports: JSValue,
         onCompileFailure: JSValue,
         onLoadFailure: JSValue,
-        onLoadComplete: JSValue) throws
+        onSuccess: JSValue) throws
     {
         try jsLoadWebAssemblyFunction().call(withArguments: [
             data,
             imports,
             onCompileFailure,
             onLoadFailure,
-            onLoadComplete])
+            onSuccess])
     }
 
     internal func jsLoadWebAssemblyFunction() throws -> JSValue {
@@ -98,7 +84,7 @@ extension JSContext {
                 "moduleImports",
                 "onCompileFailure",
                 "onLoadFailure",
-                "onLoadComplete",
+                "onSuccess",
                 ],
             body: """
                 WebAssembly.compile(moduleData)
@@ -106,7 +92,7 @@ extension JSContext {
                         let imp = WebAssembly.Module.imports(m)
                         let exp = WebAssembly.Module.exports(m)
                         return WebAssembly.instantiate(m, moduleImports).then(
-                            i => onLoadComplete(m, i, imp, exp),
+                            i => onSuccess(m, i, imp, exp),
                             e => onLoadFailure(e, imp))
                     }, e => onCompileFailure(e))
                 """)

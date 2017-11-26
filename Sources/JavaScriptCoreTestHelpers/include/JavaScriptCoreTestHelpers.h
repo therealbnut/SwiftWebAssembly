@@ -1,8 +1,5 @@
-//
 //  JavaScriptCoreTestHelpers.h
-//
-//  Created by Andrew Bennett on 26/11/17.
-//
+//  Copyright © 2017 Andrew Bennett. All rights reserved.
 
 #ifndef _JavaScriptCoreTestHelpers_h_
 #define _JavaScriptCoreTestHelpers_h_

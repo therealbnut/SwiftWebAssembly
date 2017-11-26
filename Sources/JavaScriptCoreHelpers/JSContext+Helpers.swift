@@ -1,9 +1,5 @@
-//
 //  JSContext+Helpers.swift
-//
-//  Created by Andrew Bennett on 26/11/17.
 //  Copyright © 2017 Andrew Bennett. All rights reserved.
-//
 
 import Foundation
 import JavaScriptCore
@@ -77,6 +73,12 @@ extension JSContext {
 
     public func makeFunction(from block: @convention(block)
         () -> JSValue) -> JSValue
+    {
+        return JSValue(object: block, in: self)
+    }
+
+    public func makeFunction(from block: @convention(block)
+        () -> Void) -> JSValue
     {
         return JSValue(object: block, in: self)
     }
