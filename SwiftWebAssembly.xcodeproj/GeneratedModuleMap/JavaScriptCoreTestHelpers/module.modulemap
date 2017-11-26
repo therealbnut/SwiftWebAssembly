@@ -1,0 +1,4 @@
+module JavaScriptCoreTestHelpers {
+    umbrella header "/Users/andrew/Downloads/SwiftWebAssembly/Sources/JavaScriptCoreTestHelpers/include/JavaScriptCoreTestHelpers.h"
+    export *
+}

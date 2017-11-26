@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"SwiftWebAssembly::SwiftWebAssemblyPackageTests::ProductTarget" /* SwiftWebAssemblyPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_85 /* Build configuration list for PBXAggregateTarget "SwiftWebAssemblyPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_88 /* PBXTargetDependency */,
+			);
+			name = SwiftWebAssemblyPackageTests;
+			productName = SwiftWebAssemblyPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_39 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_45 /* TestBinaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* TestBinaryData.swift */; };
+		OBJ_46 /* TestBinaryDataAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* TestBinaryDataAdd.swift */; };
+		OBJ_47 /* TestBinaryDataBadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* TestBinaryDataBadFile.swift */; };
+		OBJ_48 /* TestBinaryDataImportAndExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* TestBinaryDataImportAndExport.swift */; };
+		OBJ_49 /* TestBinaryDataLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* TestBinaryDataLibrary.swift */; };
+		OBJ_50 /* SwiftWebAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* SwiftWebAssemblyTests.swift */; };
+		OBJ_52 /* JavaScriptCoreTestHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftWebAssembly::JavaScriptCoreTestHelpers::Product" /* JavaScriptCoreTestHelpers.framework */; };
+		OBJ_53 /* SwiftWebAssembly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftWebAssembly::SwiftWebAssembly::Product" /* SwiftWebAssembly.framework */; };
+		OBJ_54 /* JavaScriptCoreHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftWebAssembly::JavaScriptCoreHelpers::Product" /* JavaScriptCoreHelpers.framework */; };
+		OBJ_65 /* stub.mm in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* stub.mm */; };
+		OBJ_71 /* SwiftWebAssembly+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* SwiftWebAssembly+Helpers.swift */; };
+		OBJ_72 /* SwiftWebAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* SwiftWebAssembly.swift */; };
+		OBJ_74 /* JavaScriptCoreHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftWebAssembly::JavaScriptCoreHelpers::Product" /* JavaScriptCoreHelpers.framework */; };
+		OBJ_80 /* JSContext+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* JSContext+Helpers.swift */; };
+		OBJ_81 /* JSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* JSError.swift */; };
+		OBJ_82 /* JSValueKeyedSubscriptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* JSValueKeyedSubscriptable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		499B971C1FCAB4C100943593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftWebAssembly::JavaScriptCoreHelpers";
+			remoteInfo = JavaScriptCoreHelpers;
+		};
+		499B971D1FCAB4C100943593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftWebAssembly::JavaScriptCoreTestHelpers";
+			remoteInfo = JavaScriptCoreTestHelpers;
+		};
+		499B971E1FCAB4C100943593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftWebAssembly::SwiftWebAssembly";
+			remoteInfo = SwiftWebAssembly;
+		};
+		499B971F1FCAB4C100943593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftWebAssembly::JavaScriptCoreHelpers";
+			remoteInfo = JavaScriptCoreHelpers;
+		};
+		499B97201FCAB4C200943593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftWebAssembly::SwiftWebAssemblyTests";
+			remoteInfo = SwiftWebAssemblyTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_10 /* JSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSError.swift; sourceTree = "<group>"; };
+		OBJ_11 /* JSValueKeyedSubscriptable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSValueKeyedSubscriptable.swift; sourceTree = "<group>"; };
+		OBJ_13 /* SwiftWebAssembly+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftWebAssembly+Helpers.swift"; sourceTree = "<group>"; };
+		OBJ_14 /* SwiftWebAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebAssembly.swift; sourceTree = "<group>"; };
+		OBJ_16 /* stub.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = stub.mm; sourceTree = "<group>"; };
+		OBJ_18 /* JavaScriptCoreTestHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptCoreTestHelpers.h; sourceTree = "<group>"; };
+		OBJ_19 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/andrew/Downloads/SwiftWebAssembly/SwiftWebAssembly.xcodeproj/GeneratedModuleMap/JavaScriptCoreTestHelpers/module.modulemap; sourceTree = "<group>"; };
+		OBJ_23 /* TestBinaryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBinaryData.swift; sourceTree = "<group>"; };
+		OBJ_24 /* TestBinaryDataAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBinaryDataAdd.swift; sourceTree = "<group>"; };
+		OBJ_25 /* TestBinaryDataBadFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBinaryDataBadFile.swift; sourceTree = "<group>"; };
+		OBJ_26 /* TestBinaryDataImportAndExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBinaryDataImportAndExport.swift; sourceTree = "<group>"; };
+		OBJ_27 /* TestBinaryDataLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBinaryDataLibrary.swift; sourceTree = "<group>"; };
+		OBJ_28 /* SwiftWebAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebAssemblyTests.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* JSContext+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSContext+Helpers.swift"; sourceTree = "<group>"; };
+		"SwiftWebAssembly::JavaScriptCoreHelpers::Product" /* JavaScriptCoreHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JavaScriptCoreHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftWebAssembly::JavaScriptCoreTestHelpers::Product" /* JavaScriptCoreTestHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JavaScriptCoreTestHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftWebAssembly::SwiftWebAssembly::Product" /* SwiftWebAssembly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftWebAssembly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftWebAssembly::SwiftWebAssemblyTests::Product" /* SwiftWebAssemblyTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftWebAssemblyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_52 /* JavaScriptCoreTestHelpers.framework in Frameworks */,
+				OBJ_53 /* SwiftWebAssembly.framework in Frameworks */,
+				OBJ_54 /* JavaScriptCoreHelpers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_74 /* JavaScriptCoreHelpers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_12 /* SwiftWebAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* SwiftWebAssembly+Helpers.swift */,
+				OBJ_14 /* SwiftWebAssembly.swift */,
+			);
+			name = SwiftWebAssembly;
+			path = Sources/SwiftWebAssembly;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_15 /* JavaScriptCoreTestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* stub.mm */,
+				OBJ_17 /* include */,
+			);
+			name = JavaScriptCoreTestHelpers;
+			path = Sources/JavaScriptCoreTestHelpers;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_17 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* JavaScriptCoreTestHelpers.h */,
+				OBJ_19 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_20 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* SwiftWebAssemblyTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_21 /* SwiftWebAssemblyTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* BinaryData */,
+				OBJ_28 /* SwiftWebAssemblyTests.swift */,
+			);
+			name = SwiftWebAssemblyTests;
+			path = Tests/SwiftWebAssemblyTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_22 /* BinaryData */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* TestBinaryData.swift */,
+				OBJ_24 /* TestBinaryDataAdd.swift */,
+				OBJ_25 /* TestBinaryDataBadFile.swift */,
+				OBJ_26 /* TestBinaryDataImportAndExport.swift */,
+				OBJ_27 /* TestBinaryDataLibrary.swift */,
+			);
+			path = BinaryData;
+			sourceTree = "<group>";
+		};
+		OBJ_29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"SwiftWebAssembly::SwiftWebAssemblyTests::Product" /* SwiftWebAssemblyTests.xctest */,
+				"SwiftWebAssembly::JavaScriptCoreTestHelpers::Product" /* JavaScriptCoreTestHelpers.framework */,
+				"SwiftWebAssembly::SwiftWebAssembly::Product" /* SwiftWebAssembly.framework */,
+				"SwiftWebAssembly::JavaScriptCoreHelpers::Product" /* JavaScriptCoreHelpers.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_20 /* Tests */,
+				OBJ_29 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* JavaScriptCoreHelpers */,
+				OBJ_12 /* SwiftWebAssembly */,
+				OBJ_15 /* JavaScriptCoreTestHelpers */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* JavaScriptCoreHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* JSContext+Helpers.swift */,
+				OBJ_10 /* JSError.swift */,
+				OBJ_11 /* JSValueKeyedSubscriptable.swift */,
+			);
+			name = JavaScriptCoreHelpers;
+			path = Sources/JavaScriptCoreHelpers;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"SwiftWebAssembly::JavaScriptCoreHelpers" /* JavaScriptCoreHelpers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_76 /* Build configuration list for PBXNativeTarget "JavaScriptCoreHelpers" */;
+			buildPhases = (
+				OBJ_79 /* Sources */,
+				OBJ_83 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JavaScriptCoreHelpers;
+			productName = JavaScriptCoreHelpers;
+			productReference = "SwiftWebAssembly::JavaScriptCoreHelpers::Product" /* JavaScriptCoreHelpers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftWebAssembly::JavaScriptCoreTestHelpers" /* JavaScriptCoreTestHelpers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_61 /* Build configuration list for PBXNativeTarget "JavaScriptCoreTestHelpers" */;
+			buildPhases = (
+				OBJ_64 /* Sources */,
+				OBJ_66 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JavaScriptCoreTestHelpers;
+			productName = JavaScriptCoreTestHelpers;
+			productReference = "SwiftWebAssembly::JavaScriptCoreTestHelpers::Product" /* JavaScriptCoreTestHelpers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftWebAssembly::SwiftPMPackageDescription" /* SwiftWebAssemblyPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_35 /* Build configuration list for PBXNativeTarget "SwiftWebAssemblyPackageDescription" */;
+			buildPhases = (
+				OBJ_38 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftWebAssemblyPackageDescription;
+			productName = SwiftWebAssemblyPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftWebAssembly::SwiftWebAssembly" /* SwiftWebAssembly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_67 /* Build configuration list for PBXNativeTarget "SwiftWebAssembly" */;
+			buildPhases = (
+				OBJ_70 /* Sources */,
+				OBJ_73 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_75 /* PBXTargetDependency */,
+			);
+			name = SwiftWebAssembly;
+			productName = SwiftWebAssembly;
+			productReference = "SwiftWebAssembly::SwiftWebAssembly::Product" /* SwiftWebAssembly.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftWebAssembly::SwiftWebAssemblyTests" /* SwiftWebAssemblyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_41 /* Build configuration list for PBXNativeTarget "SwiftWebAssemblyTests" */;
+			buildPhases = (
+				OBJ_44 /* Sources */,
+				OBJ_51 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_55 /* PBXTargetDependency */,
+				OBJ_57 /* PBXTargetDependency */,
+				OBJ_59 /* PBXTargetDependency */,
+			);
+			name = SwiftWebAssemblyTests;
+			productName = SwiftWebAssemblyTests;
+			productReference = "SwiftWebAssembly::SwiftWebAssemblyTests::Product" /* SwiftWebAssemblyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftWebAssembly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"SwiftWebAssembly::SwiftPMPackageDescription" /* SwiftWebAssemblyPackageDescription */,
+				"SwiftWebAssembly::SwiftWebAssemblyTests" /* SwiftWebAssemblyTests */,
+				"SwiftWebAssembly::JavaScriptCoreTestHelpers" /* JavaScriptCoreTestHelpers */,
+				"SwiftWebAssembly::SwiftWebAssembly" /* SwiftWebAssembly */,
+				"SwiftWebAssembly::JavaScriptCoreHelpers" /* JavaScriptCoreHelpers */,
+				"SwiftWebAssembly::SwiftWebAssemblyPackageTests::ProductTarget" /* SwiftWebAssemblyPackageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_39 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_45 /* TestBinaryData.swift in Sources */,
+				OBJ_46 /* TestBinaryDataAdd.swift in Sources */,
+				OBJ_47 /* TestBinaryDataBadFile.swift in Sources */,
+				OBJ_48 /* TestBinaryDataImportAndExport.swift in Sources */,
+				OBJ_49 /* TestBinaryDataLibrary.swift in Sources */,
+				OBJ_50 /* SwiftWebAssemblyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_65 /* stub.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_71 /* SwiftWebAssembly+Helpers.swift in Sources */,
+				OBJ_72 /* SwiftWebAssembly.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_80 /* JSContext+Helpers.swift in Sources */,
+				OBJ_81 /* JSError.swift in Sources */,
+				OBJ_82 /* JSValueKeyedSubscriptable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftWebAssembly::JavaScriptCoreTestHelpers" /* JavaScriptCoreTestHelpers */;
+			targetProxy = 499B971D1FCAB4C100943593 /* PBXContainerItemProxy */;
+		};
+		OBJ_57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftWebAssembly::SwiftWebAssembly" /* SwiftWebAssembly */;
+			targetProxy = 499B971E1FCAB4C100943593 /* PBXContainerItemProxy */;
+		};
+		OBJ_59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftWebAssembly::JavaScriptCoreHelpers" /* JavaScriptCoreHelpers */;
+			targetProxy = 499B971F1FCAB4C100943593 /* PBXContainerItemProxy */;
+		};
+		OBJ_75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftWebAssembly::JavaScriptCoreHelpers" /* JavaScriptCoreHelpers */;
+			targetProxy = 499B971C1FCAB4C100943593 /* PBXContainerItemProxy */;
+		};
+		OBJ_88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftWebAssembly::SwiftWebAssemblyTests" /* SwiftWebAssemblyTests */;
+			targetProxy = 499B97201FCAB4C200943593 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/JavaScriptCoreTestHelpers/include",
+					"$(SRCROOT)/SwiftWebAssembly.xcodeproj/GeneratedModuleMap/JavaScriptCoreTestHelpers",
+				);
+				INFOPLIST_FILE = SwiftWebAssembly.xcodeproj/SwiftWebAssemblyTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftWebAssembly.xcodeproj/GeneratedModuleMap/JavaScriptCoreTestHelpers/module.modulemap";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftWebAssemblyTests;
+			};
+			name = Debug;
+		};
+		OBJ_43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/JavaScriptCoreTestHelpers/include",
+					"$(SRCROOT)/SwiftWebAssembly.xcodeproj/GeneratedModuleMap/JavaScriptCoreTestHelpers",
+				);
+				INFOPLIST_FILE = SwiftWebAssembly.xcodeproj/SwiftWebAssemblyTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftWebAssembly.xcodeproj/GeneratedModuleMap/JavaScriptCoreTestHelpers/module.modulemap";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftWebAssemblyTests;
+			};
+			name = Release;
+		};
+		OBJ_62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/JavaScriptCoreTestHelpers/include",
+				);
+				INFOPLIST_FILE = SwiftWebAssembly.xcodeproj/JavaScriptCoreTestHelpers_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = JavaScriptCoreTestHelpers;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = JavaScriptCoreTestHelpers;
+			};
+			name = Debug;
+		};
+		OBJ_63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/JavaScriptCoreTestHelpers/include",
+				);
+				INFOPLIST_FILE = SwiftWebAssembly.xcodeproj/JavaScriptCoreTestHelpers_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = JavaScriptCoreTestHelpers;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = JavaScriptCoreTestHelpers;
+			};
+			name = Release;
+		};
+		OBJ_68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftWebAssembly.xcodeproj/SwiftWebAssembly_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftWebAssembly;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftWebAssembly;
+			};
+			name = Debug;
+		};
+		OBJ_69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftWebAssembly.xcodeproj/SwiftWebAssembly_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftWebAssembly;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftWebAssembly;
+			};
+			name = Release;
+		};
+		OBJ_77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftWebAssembly.xcodeproj/JavaScriptCoreHelpers_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = JavaScriptCoreHelpers;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = JavaScriptCoreHelpers;
+			};
+			name = Debug;
+		};
+		OBJ_78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftWebAssembly.xcodeproj/JavaScriptCoreHelpers_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = JavaScriptCoreHelpers;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = JavaScriptCoreHelpers;
+			};
+			name = Release;
+		};
+		OBJ_86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "SwiftWebAssembly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_35 /* Build configuration list for PBXNativeTarget "SwiftWebAssemblyPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_36 /* Debug */,
+				OBJ_37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_41 /* Build configuration list for PBXNativeTarget "SwiftWebAssemblyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_42 /* Debug */,
+				OBJ_43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_61 /* Build configuration list for PBXNativeTarget "JavaScriptCoreTestHelpers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_62 /* Debug */,
+				OBJ_63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_67 /* Build configuration list for PBXNativeTarget "SwiftWebAssembly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_68 /* Debug */,
+				OBJ_69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_76 /* Build configuration list for PBXNativeTarget "JavaScriptCoreHelpers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_77 /* Debug */,
+				OBJ_78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_85 /* Build configuration list for PBXAggregateTarget "SwiftWebAssemblyPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_86 /* Debug */,
+				OBJ_87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
