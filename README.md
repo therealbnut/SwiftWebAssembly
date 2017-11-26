@@ -1,4 +1,5 @@
-# SwiftWebAssembly [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/therealbnut/SwiftWebAssembly/master/LICENSE.md) [![GitHub release](https://img.shields.io/github/release/therealbnut/SwiftWebAssembly.svg)](https://github.com/therealbnut/SwiftWebAssembly/releases)
+# SwiftWebAssembly [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/therealbnut/SwiftWebAssembly/blob/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/therealbnut/SwiftWebAssembly.svg)](https://github.com/therealbnut/SwiftWebAssembly/releases) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Carthage compatible](https://img.shields.io/badge/SwiftPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
+
 
 SwiftWebAssembly has one purpose, to load WebAssembly compiled modules and exposes them to Swift.
 
